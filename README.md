@@ -7,7 +7,7 @@
 [![Latest Release](https://img.shields.io/github/v/tag/eSlider/go-trade?sort=semver&label=release)](https://github.com/eSlider/go-trade/releases)
 [![GitHub Stars](https://img.shields.io/github/stars/eSlider/go-trade?style=social)](https://github.com/eSlider/go-trade/stargazers)
 
-Go library providing a **unified data model for aggregating market data across multiple exchanges**. Defines exchange-agnostic types for candles, time-and-sale transactions, order books, orders, instruments, and currencies — serving as the common schema for normalizing data from Binance, CME, NASDAQ, and other trading venues.
+Go library providing a **unified data model for aggregating market data across multiple exchanges**. Defines exchange-agnostic types for candles, time-and-sale transactions, order books, orders, instruments, symbols, and currencies — serving as the common schema for normalizing data from Binance, CME, NASDAQ, and other trading venues.
 
 ## Architecture
 
@@ -28,6 +28,7 @@ graph TB
         ORD["Order<br/>Trade orders"]
         INS["Instrument<br/>Tradeable assets"]
         MKT["Market<br/>Trading pairs"]
+        SYM["Symbol<br/>Hierarchical asset tree"]
         CUR["currency.Provider<br/>170+ fiat, 60+ crypto"]
     end
 
@@ -56,7 +57,8 @@ graph TB
 
     INS -.->|"classifies"| TAS
     MKT -.->|"identifies"| INS
-    CUR -.->|"resolves"| MKT
+    SYM -.->|"defines"| MKT
+    CUR -.->|"resolves"| SYM
 ```
 
 ## Data Flow
@@ -106,6 +108,33 @@ graph LR
     T --> C
 ```
 
+## Symbol Hierarchy
+
+Symbols form a tree that links base assets to their derivatives and stablecoins, enabling cross-exchange normalization:
+
+```mermaid
+graph TD
+    USD["USD (fiat)"]
+    BTC["BTC (crypto)"]
+    ETH["ETH (crypto)"]
+
+    USD --> USDT["USDT — stablecoin"]
+    USD --> USDC["USDC — stablecoin"]
+    USD --> EUR["EUR (fiat)"]
+    USD --> GBP["GBP (fiat)"]
+
+    BTC --> BTCFT["BTCFT — futures token"]
+    BTC --> BTCM24["BTCM24 — Jun 2024 future"]
+    BTC --> WBTC["WBTC — wrapped"]
+
+    ETH --> STETH["stETH — liquid staking"]
+    ETH --> ETHM24["ETHM24 — Jun 2024 future"]
+
+    style USD fill:#4CAF50,color:#fff
+    style BTC fill:#F7931A,color:#fff
+    style ETH fill:#627EEA,color:#fff
+```
+
 ## Installation
 
 ```bash
@@ -118,6 +147,7 @@ go get github.com/eslider/go-trade
 - **TimeAndSale** — Atomic trade events with exchange ID, data feed provider, aggressor side
 - **OrderBook** — Bid/ask snapshots with timestamps
 - **Order** — Custom JSON unmarshaling for string-encoded fields from exchange APIs
+- **Symbol** — Hierarchical asset tree (fiat/crypto) with parent-child relationships for derivatives
 - **Instrument / Market** — Asset classification (spot, future, option, FX) and trading pairs
 - **Currency provider** — Embedded 170+ fiat currencies and 60+ crypto tokens with lookup and filtering
 - **DateTime / UUID** — JSON-aware wrappers for exchange date formats and UUIDs
@@ -176,6 +206,31 @@ cryptos := provider.Currencies.Cryptos()
 fmt.Printf("%d cryptocurrencies loaded\n", len(cryptos))
 ```
 
+### Symbol Tree
+
+```go
+symbols := trade.Symbols{
+    {ID: 1, Type: trade.SymbolFiat, Code: "USD", Name: "US Dollar"},
+    {ID: 2, Type: trade.SymbolCrypto, ParentID: 1, Code: "USDT", Name: "Tether"},
+    {ID: 3, Type: trade.SymbolCrypto, ParentID: 1, Code: "USDC", Name: "USD Coin"},
+    {ID: 14, Type: trade.SymbolCrypto, Code: "BTC", Name: "Bitcoin"},
+    {ID: 22, Type: trade.SymbolCrypto, ParentID: 14, Code: "BTCFT", Name: "BTC Futures Token"},
+}
+
+// Tree navigation
+roots := symbols.Roots()               // USD, BTC
+btcDerivs := symbols.Children(14)      // BTCFT
+usdStables := symbols.Children(1)      // USDT, USDC
+
+// Lookup
+btc := symbols.GetByCode("BTC")
+fmt.Println(btc.IsCrypto(), btc.IsRoot()) // true true
+
+// Filter
+fiats := symbols.Fiats()               // USD
+cryptos := symbols.Cryptos()            // USDT, USDC, BTC, BTCFT
+```
+
 ### Order Deserialization
 
 ```go
@@ -197,21 +252,23 @@ fmt.Println(order.CustomerID) // 41 (int64, not string)
 
 ```
 go-trade/
-├── trade.go              # Package doc
-├── candle.go             # Candle (OHLC + microstructure)
-├── time_and_sale.go      # Atomic trade events
-├── order.go              # Trading orders
-├── instrument.go         # Instruments and markets
-├── aggressor_side.go     # Buy/sell side enum
-├── datetime.go           # Exchange datetime parser
-├── uuid.go               # UUID JSON wrapper
-├── price_clusters.go     # Volume at price level
-├── candle_delta_levels.go# Delta/volume levels
-├── trade_test.go         # Unit tests
+├── trade.go               # Package doc
+├── candle.go              # Candle (OHLC + microstructure)
+├── time_and_sale.go       # Atomic trade events
+├── order.go               # Trading orders
+├── instrument.go          # Instruments and markets
+├── symbol.go              # Hierarchical asset symbols
+├── aggressor_side.go      # Buy/sell side enum
+├── datetime.go            # Exchange datetime parser
+├── uuid.go                # UUID JSON wrapper
+├── price_clusters.go      # Volume at price level
+├── candle_delta_levels.go # Delta/volume levels
+├── trade_test.go          # Unit tests
+├── symbol_test.go         # Symbol tests
 └── currency/
-    ├── currency.go       # Fiat + crypto provider
-    ├── currency_test.go  # Currency tests
-    └── currencies.yml    # 170+ fiat, 60+ crypto definitions
+    ├── currency.go        # Fiat + crypto provider
+    ├── currency_test.go   # Currency tests
+    └── currencies.yml     # 170+ fiat, 60+ crypto definitions
 ```
 
 ## API Reference
@@ -223,6 +280,9 @@ go-trade/
 | `Candle` | OHLC candlestick with price clusters, delta levels, and volume profile |
 | `TimeAndSale` | Atomic trade event: price, volume, side, exchange, timestamp |
 | `Order` | Trading order with auto-deserialization from string-encoded JSON |
+| `Symbol` | Trading symbol with type (fiat/crypto) and parent-child hierarchy |
+| `Symbols` | Collection with `GetByCode`, `GetByID`, `Children`, `Roots`, `Fiats`, `Cryptos` |
+| `SymbolType` | Enum: `SymbolFiat`, `SymbolCrypto` |
 | `Instrument` | Tradeable asset (spot, future, option, FX) |
 | `Market` | Trading pair (FROM/TO symbols) |
 | `OrderBook` / `OrderBookEntry` | Bid/ask snapshot at a point in time |
@@ -242,6 +302,25 @@ go-trade/
 | `Spread()` | Ask − Bid |
 | `Range()` | High − Low |
 | `Duration()` | TimeClose − TimeOpen |
+
+### Symbol Methods
+
+| Method | Description |
+|---|---|
+| `IsRoot()` | ParentID == 0 (top-level asset) |
+| `IsFiat()` | Type == SymbolFiat |
+| `IsCrypto()` | Type == SymbolCrypto |
+
+### Symbols Collection
+
+| Method | Description |
+|---|---|
+| `GetByCode(code)` | Find symbol by ticker code |
+| `GetByID(id)` | Find symbol by numeric ID |
+| `Children(parentID)` | All symbols with given parent |
+| `Roots()` | All top-level symbols (parent == 0) |
+| `Fiats()` | Filter fiat symbols |
+| `Cryptos()` | Filter crypto symbols |
 
 ### Currency Package
 
