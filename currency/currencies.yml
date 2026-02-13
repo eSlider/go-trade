@@ -1,0 +1,1679 @@
+currencies:
+  - id: AED
+    code: AED
+    description: United Arab Emirates Dirham
+    kind: fiat
+    country: AE
+  - id: AFN
+    code: AFN
+    description: Afghan Afghani
+    kind: fiat
+    country: AF
+  - id: ALL
+    code: ALL
+    description: Albanian Lek
+    kind: fiat
+    country: AL
+  - id: AMD
+    code: AMD
+    description: Armenian Dram
+    kind: fiat
+    country: AM
+  - id: ANG
+    code: ANG
+    description: Netherlands Antillean Guilder
+    kind: fiat
+    country: CW
+  - id: AOA
+    code: AOA
+    description: Angolan Kwanza
+    kind: fiat
+    country: AO
+  - id: ARS
+    code: ARS
+    description: Argentine Peso
+    kind: fiat
+    country: AR
+  - id: AUD
+    code: AUD
+    description: Australian Dollar
+    kind: fiat
+    country: AU
+  - id: AWG
+    code: AWG
+    description: Aruban Florin
+    kind: fiat
+    country: AW
+  - id: AZN
+    code: AZN
+    description: Azerbaijani Manat
+    kind: fiat
+    country: AZ
+  - id: BAM
+    code: BAM
+    description: Bosnia-Herzegovina Convertible Mark
+    kind: fiat
+    country: BA
+  - id: BBD
+    code: BBD
+    description: Barbadian Dollar
+    kind: fiat
+    country: BB
+  - id: BDT
+    code: BDT
+    description: Bangladeshi Taka
+    kind: fiat
+    country: BD
+  - id: BGN
+    code: BGN
+    description: Bulgarian Lev
+    kind: fiat
+    country: BG
+  - id: BHD
+    code: BHD
+    description: Bahraini Dinar
+    kind: fiat
+    country: BH
+  - id: BIF
+    code: BIF
+    description: Burundian Franc
+    kind: fiat
+    country: BI
+  - id: BMD
+    code: BMD
+    description: Bermudan Dollar
+    kind: fiat
+    country: BM
+  - id: BND
+    code: BND
+    description: Brunei Dollar
+    kind: fiat
+    country: BN
+  - id: BOB
+    code: BOB
+    description: Bolivian Boliviano
+    kind: fiat
+    country: BO
+  - id: BRL
+    code: BRL
+    description: Brazilian Real
+    kind: fiat
+    country: BR
+  - id: BSD
+    code: BSD
+    description: Bahamian Dollar
+    kind: fiat
+    country: BS
+  - id: BTN
+    code: BTN
+    description: Bhutanese Ngultrum
+    kind: fiat
+    country: BT
+  - id: BWP
+    code: BWP
+    description: Botswanan Pula
+    kind: fiat
+    country: BW
+  - id: BYN
+    code: BYN
+    description: Belarusian Ruble
+    kind: fiat
+    country: BY
+  - id: BZD
+    code: BZD
+    description: Belize Dollar
+    kind: fiat
+    country: BZ
+  - id: CAD
+    code: CAD
+    description: Canadian Dollar
+    kind: fiat
+    country: CA
+  - id: CDF
+    code: CDF
+    description: Congolese Franc
+    kind: fiat
+    country: CD
+  - id: CHF
+    code: CHF
+    description: Swiss Franc
+    kind: fiat
+    country: CH
+  - id: CLF
+    code: CLF
+    description: Chilean Unit of Account (UF)
+    kind: fiat
+    country: CL
+  - id: CLP
+    code: CLP
+    description: Chilean Peso
+    kind: fiat
+    country: CL
+  - id: CNY
+    code: CNY
+    description: Chinese Yuan
+    kind: fiat
+    country: CN
+  - id: COP
+    code: COP
+    description: Colombian Peso
+    kind: fiat
+    country: CO
+  - id: CRC
+    code: CRC
+    description: Costa Rican Colón
+    kind: fiat
+    country: CR
+  - id: CUP
+    code: CUP
+    description: Cuban Peso
+    kind: fiat
+    country: CU
+  - id: CVE
+    code: CVE
+    description: Cape Verdean Escudo
+    kind: fiat
+    country: CV
+  - id: CZK
+    code: CZK
+    description: Czech Koruna
+    kind: fiat
+    country: CZ
+  - id: DJF
+    code: DJF
+    description: Djiboutian Franc
+    kind: fiat
+    country: DJ
+  - id: DKK
+    code: DKK
+    description: Danish Krone
+    kind: fiat
+    country: DK
+  - id: DOP
+    code: DOP
+    description: Dominican Peso
+    kind: fiat
+    country: DO
+  - id: DZD
+    code: DZD
+    description: Algerian Dinar
+    kind: fiat
+    country: DZ
+  - id: EGP
+    code: EGP
+    description: Egyptian Pound
+    kind: fiat
+    country: EG
+  - id: ERN
+    code: ERN
+    description: Eritrean Nakfa
+    kind: fiat
+    country: ER
+  - id: ETB
+    code: ETB
+    description: Ethiopian Birr
+    kind: fiat
+    country: ET
+  - id: EUR
+    code: EUR
+    description: Euro
+    kind: fiat
+    country: EU
+  - id: FJD
+    code: FJD
+    description: Fijian Dollar
+    kind: fiat
+    country: FJ
+  - id: GBP
+    code: GBP
+    description: British Pound
+    kind: fiat
+    country: GB
+  - id: GEL
+    code: GEL
+    description: Georgian Lari
+    kind: fiat
+    country: GE
+  - id: GHS
+    code: GHS
+    description: Ghanaian Cedi
+    kind: fiat
+    country: GH
+  - id: GIP
+    code: GIP
+    description: Gibraltar Pound
+    kind: fiat
+    country: GI
+  - id: GMD
+    code: GMD
+    description: Gambian Dalasi
+    kind: fiat
+    country: GM
+  - id: GNF
+    code: GNF
+    description: Guinean Franc
+    kind: fiat
+    country: GN
+  - id: GTQ
+    code: GTQ
+    description: Guatemalan Quetzal
+    kind: fiat
+    country: GT
+  - id: GYD
+    code: GYD
+    description: Guyanaese Dollar
+    kind: fiat
+    country: GY
+  - id: HKD
+    code: HKD
+    description: Hong Kong Dollar
+    kind: fiat
+    country: HK
+  - id: HNL
+    code: HNL
+    description: Honduran Lempira
+    kind: fiat
+    country: HN
+  - id: HTG
+    code: HTG
+    description: Haitian Gourde
+    kind: fiat
+    country: HT
+  - id: HUF
+    code: HUF
+    description: Hungarian Forint
+    kind: fiat
+    country: HU
+  - id: IDR
+    code: IDR
+    description: Indonesian Rupiah
+    kind: fiat
+    country: ID
+  - id: ILS
+    code: ILS
+    description: Israeli New Shekel
+    kind: fiat
+    country: IL
+  - id: INR
+    code: INR
+    description: Indian Rupee
+    kind: fiat
+    country: IN
+  - id: IQD
+    code: IQD
+    description: Iraqi Dinar
+    kind: fiat
+    country: IQ
+  - id: IRR
+    code: IRR
+    description: Iranian Rial
+    kind: fiat
+    country: IR
+  - id: ISK
+    code: ISK
+    description: Icelandic Króna
+    kind: fiat
+    country: IS
+  - id: JMD
+    code: JMD
+    description: Jamaican Dollar
+    kind: fiat
+    country: JM
+  - id: JOD
+    code: JOD
+    description: Jordanian Dinar
+    kind: fiat
+    country: JO
+  - id: JPY
+    code: JPY
+    description: Japanese Yen
+    kind: fiat
+    country: JP
+  - id: KES
+    code: KES
+    description: Kenyan Shilling
+    kind: fiat
+    country: KE
+  - id: KGS
+    code: KGS
+    description: Kyrgystani Som
+    kind: fiat
+    country: KG
+  - id: KHR
+    code: KHR
+    description: Cambodian Riel
+    kind: fiat
+    country: KH
+  - id: KMF
+    code: KMF
+    description: Comorian Franc
+    kind: fiat
+    country: KM
+  - id: KPW
+    code: KPW
+    description: North Korean Won
+    kind: fiat
+    country: KP
+  - id: KRW
+    code: KRW
+    description: South Korean Won
+    kind: fiat
+    country: KR
+  - id: KWD
+    code: KWD
+    description: Kuwaiti Dinar
+    kind: fiat
+    country: KW
+  - id: KYD
+    code: KYD
+    description: Cayman Islands Dollar
+    kind: fiat
+    country: KY
+  - id: KZT
+    code: KZT
+    description: Kazakhstani Tenge
+    kind: fiat
+    country: KZ
+  - id: LAK
+    code: LAK
+    description: Laotian Kip
+    kind: fiat
+    country: LA
+  - id: LBP
+    code: LBP
+    description: Lebanese Pound
+    kind: fiat
+    country: LB
+  - id: LKR
+    code: LKR
+    description: Sri Lankan Rupee
+    kind: fiat
+    country: LK
+  - id: LRD
+    code: LRD
+    description: Liberian Dollar
+    kind: fiat
+    country: LR
+  - id: LSL
+    code: LSL
+    description: Lesotho Loti
+    kind: fiat
+    country: LS
+  - id: LYD
+    code: LYD
+    description: Libyan Dinar
+    kind: fiat
+    country: LY
+  - id: MAD
+    code: MAD
+    description: Moroccan Dirham
+    kind: fiat
+    country: MA
+  - id: MDL
+    code: MDL
+    description: Moldovan Leu
+    kind: fiat
+    country: MD
+  - id: MGA
+    code: MGA
+    description: Malagasy Ariary
+    kind: fiat
+    country: MG
+  - id: MKD
+    code: MKD
+    description: Macedonian Denar
+    kind: fiat
+    country: MK
+  - id: MMK
+    code: MMK
+    description: Myanmar Kyat
+    kind: fiat
+    country: MM
+  - id: MNT
+    code: MNT
+    description: Mongolian Tugrik
+    kind: fiat
+    country: MN
+  - id: MOP
+    code: MOP
+    description: Macanese Pataca
+    kind: fiat
+    country: MO
+  - id: MRU
+    code: MRU
+    description: Ouguiya
+    kind: fiat
+    country: MR
+  - id: MUR
+    code: MUR
+    description: Mauritian Rupee
+    kind: fiat
+    country: MU
+  - id: MVR
+    code: MVR
+    description: Maldivian Rufiyaa
+    kind: fiat
+    country: MV
+  - id: MWK
+    code: MWK
+    description: Malawian Kwacha
+    kind: fiat
+    country: MW
+  - id: MXN
+    code: MXN
+    description: Mexican Peso
+    kind: fiat
+    country: MX
+  - id: MXV
+    code: MXV
+    description: Mexican Investment Unit
+    kind: fiat
+    country: MX
+  - id: MYR
+    code: MYR
+    description: Malaysian Ringgit
+    kind: fiat
+    country: MY
+  - id: MZN
+    code: MZN
+    description: Mozambican Metical
+    kind: fiat
+    country: MZ
+  - id: NAD
+    code: NAD
+    description: Namibian Dollar
+    kind: fiat
+    country: NA
+  - id: NGN
+    code: NGN
+    description: Nigerian Naira
+    kind: fiat
+    country: NG
+  - id: NIO
+    code: NIO
+    description: Nicaraguan Córdoba
+    kind: fiat
+    country: NI
+  - id: NOK
+    code: NOK
+    description: Norwegian Krone
+    kind: fiat
+    country: NO
+  - id: NPR
+    code: NPR
+    description: Nepalese Rupee
+    kind: fiat
+    country: NP
+  - id: NZD
+    code: NZD
+    description: New Zealand Dollar
+    kind: fiat
+    country: NZ
+  - id: OMR
+    code: OMR
+    description: Omani Rial
+    kind: fiat
+    country: OM
+  - id: PAB
+    code: PAB
+    description: Panamanian Balboa
+    kind: fiat
+    country: PA
+  - id: PEN
+    code: PEN
+    description: Peruvian Sol
+    kind: fiat
+    country: PE
+  - id: PGK
+    code: PGK
+    description: Papua New Guinean Kina
+    kind: fiat
+    country: PG
+  - id: PHP
+    code: PHP
+    description: Philippine Peso
+    kind: fiat
+    country: PH
+  - id: PKR
+    code: PKR
+    description: Pakistani Rupee
+    kind: fiat
+    country: PK
+  - id: PLN
+    code: PLN
+    description: Polish Zloty
+    kind: fiat
+    country: PL
+  - id: PYG
+    code: PYG
+    description: Paraguayan Guarani
+    kind: fiat
+    country: PY
+  - id: QAR
+    code: QAR
+    description: Qatari Rial
+    kind: fiat
+    country: QA
+  - id: RON
+    code: RON
+    description: Romanian Leu
+    kind: fiat
+    country: RO
+  - id: RSD
+    code: RSD
+    description: Serbian Dinar
+    kind: fiat
+    country: RS
+  - id: RUB
+    code: RUB
+    description: Russian Ruble
+    kind: fiat
+    country: RU
+  - id: RWF
+    code: RWF
+    description: Rwandan Franc
+    kind: fiat
+    country: RW
+  - id: SAR
+    code: SAR
+    description: Saudi Riyal
+    kind: fiat
+    country: SA
+  - id: SBD
+    code: SBD
+    description: Solomon Islands Dollar
+    kind: fiat
+    country: SB
+  - id: SCR
+    code: SCR
+    description: Seychellois Rupee
+    kind: fiat
+    country: SC
+  - id: SDG
+    code: SDG
+    description: Sudanese Pound
+    kind: fiat
+    country: SD
+  - id: SEK
+    code: SEK
+    description: Swedish Krona
+    kind: fiat
+    country: SE
+  - id: SGD
+    code: SGD
+    description: Singapore Dollar
+    kind: fiat
+    country: SG
+  - id: SLL
+    code: SLL
+    description: Sierra Leonean Leone
+    kind: fiat
+    country: SL
+  - id: SOS
+    code: SOS
+    description: Somali Shilling
+    kind: fiat
+    country: SO
+  - id: SRD
+    code: SRD
+    description: Surinamese Dollar
+    kind: fiat
+    country: SR
+  - id: STN
+    code: STN
+    description: Sao Tome and Principe dobra
+    kind: fiat
+    country: ST
+  - id: SVC
+    code: SVC
+    description: Salvadoran Colón
+    kind: fiat
+    country: SV
+  - id: SYP
+    code: SYP
+    description: Syrian Pound
+    kind: fiat
+    country: SY
+  - id: SZL
+    code: SZL
+    description: Swazi Lilangeni
+    kind: fiat
+    country: SZ
+  - id: THB
+    code: THB
+    description: Thai Baht
+    kind: fiat
+    country: TH
+  - id: TJS
+    code: TJS
+    description: Tajikistani Somoni
+    kind: fiat
+    country: TJ
+  - id: TMT
+    code: TMT
+    description: Turkmenistani Manat
+    kind: fiat
+    country: TM
+  - id: TND
+    code: TND
+    description: Tunisian Dinar
+    kind: fiat
+    country: TN
+  - id: TOP
+    code: TOP
+    description: Tongan Paʻanga
+    kind: fiat
+    country: TO
+  - id: TRY
+    code: TRY
+    description: Turkish Lira
+    kind: fiat
+    country: TR
+  - id: TTD
+    code: TTD
+    description: Trinidad & Tobago Dollar
+    kind: fiat
+    country: TT
+  - id: TWD
+    code: TWD
+    description: New Taiwan Dollar
+    kind: fiat
+    country: TW
+  - id: TZS
+    code: TZS
+    description: Tanzanian Shilling
+    kind: fiat
+    country: TZ
+  - id: UAH
+    code: UAH
+    description: Ukrainian Hryvnia
+    kind: fiat
+    country: UA
+  - id: UGX
+    code: UGX
+    description: Ugandan Shilling
+    kind: fiat
+    country: UG
+  - id: USD
+    code: USD
+    description: US Dollar
+    kind: fiat
+    country: US
+  - id: UYU
+    code: UYU
+    description: Uruguayan Peso
+    kind: fiat
+    country: UY
+  - id: UZS
+    code: UZS
+    description: Uzbekistani Som
+    kind: fiat
+    country: UZ
+  - id: VES
+    code: VES
+    description: Bolívar Soberano
+    kind: fiat
+    country: VE
+  - id: VND
+    code: VND
+    description: Vietnamese Dong
+    kind: fiat
+    country: VN
+  - id: VUV
+    code: VUV
+    description: Vanuatu Vatu
+    kind: fiat
+    country: VU
+  - id: WST
+    code: WST
+    description: Samoan Tala
+    kind: fiat
+    country: WS
+  - id: XAF
+    code: XAF
+    description: Central African CFA Franc
+    kind: fiat
+    country: CF
+  - id: XCD
+    code: XCD
+    description: East Caribbean Dollar
+    kind: fiat
+    country: AG
+  - id: XDR
+    code: XDR
+    description: SDR (Special Drawing Right)
+    kind: fiat
+    country: US
+  - id: XOF
+    code: XOF
+    description: West African CFA Franc
+    kind: fiat
+    country: BJ
+  - id: XPF
+    code: XPF
+    description: CFP Franc
+    kind: fiat
+    country: PF
+  - id: XTVATS
+    code: ATS
+    description: Austrian Schilling
+    kind: fiat
+    country: AT
+  - id: XTVBEF
+    code: BEF
+    description: Belgian Franc
+    kind: fiat
+    country: BE
+  - id: XTVC1INCH
+    code: 1INCH
+    description: 1inch Network
+    kind: crypto
+
+  - id: XTVCAAVE
+    code: AAVE
+    description: Aave
+    kind: crypto
+
+  - id: XTVCADA
+    code: ADA
+    description: Cardano
+    kind: crypto
+
+  - id: XTVCALGO
+    code: ALGO
+    description: Algorand
+    kind: crypto
+
+  - id: XTVCANKR
+    code: ANKR
+    description: Ankr
+    kind: crypto
+
+  - id: XTVCATOM
+    code: ATOM
+    description: Cosmos
+    kind: crypto
+
+  - id: XTVCAVAX
+    code: AVAX
+    description: Avalanche
+    kind: crypto
+
+  - id: XTVCAXS
+    code: AXS
+    description: Axie Infinity
+    kind: crypto
+
+  - id: XTVCBAT
+    code: BAT
+    description: Basic Attention Token
+    kind: crypto
+
+  - id: XTVCBCH
+    code: BCH
+    description: Bitcoin Cash
+    kind: crypto
+
+  - id: XTVCBNB
+    code: BNB
+    description: BNB
+    kind: crypto
+
+  - id: XTVCBNT
+    code: BNT
+    description: Bancor
+    kind: crypto
+
+  - id: XTVCBSV
+    code: BSV
+    description: Bitcoin SV
+    kind: crypto
+
+  - id: XTVCBTC
+    code: BTC
+    description: Bitcoin
+    kind: crypto
+
+  - id: XTVCBUSD
+    code: BUSD
+    description: Binance USD
+    kind: crypto
+
+  - id: XTVCCAKE
+    code: CAKE
+    description: PancakeSwap
+    kind: crypto
+
+  - id: XTVCCKB
+    code: CKB
+    description: Nervos Network
+    kind: crypto
+
+  - id: XTVCCOMP
+    code: COMP
+    description: Compound
+    kind: crypto
+
+  - id: XTVCCOTI
+    code: COTI
+    description: COTI
+    kind: crypto
+
+  - id: XTVCCRV
+    code: CRV
+    description: Curve DAO Token
+    kind: crypto
+
+  - id: XTVCDAI
+    code: DAI
+    description: Dai
+    kind: crypto
+
+  - id: XTVCDFI
+    code: DFI
+    description: DeFiChain
+    kind: crypto
+
+  - id: XTVCDOGE
+    code: DOGE
+    description: Dogecoin
+    kind: crypto
+
+  - id: XTVCDOT
+    code: DOT
+    description: Polkadot
+    kind: crypto
+
+  - id: XTVCDYDX
+    code: DYDX
+    description: dYdX (ethDYDX)
+    kind: crypto
+
+  - id: XTVCEGLD
+    code: EGLD
+    description: MultiversX
+    kind: crypto
+
+  - id: XTVCEOS
+    code: EOS
+    description: EOS
+    kind: crypto
+
+  - id: XTVCETC
+    code: ETC
+    description: Ethereum Classic
+    kind: crypto
+
+  - id: XTVCETH
+    code: ETH
+    description: Ethereum
+    kind: crypto
+
+  - id: XTVCFIL
+    code: FIL
+    description: Filecoin
+    kind: crypto
+
+  - id: XTVCFTM
+    code: FTM
+    description: Fantom
+    kind: crypto
+
+  - id: XTVCFTT
+    code: FTT
+    description: FTX Token
+    kind: crypto
+
+  - id: XTVCFXS
+    code: FXS
+    description: Frax Share
+    kind: crypto
+
+  - id: XTVCGNO
+    code: GNO
+    description: Gnosis
+    kind: crypto
+
+  - id: XTVCGRT
+    code: GRT
+    description: The Graph
+    kind: crypto
+
+  - id: XTVCHBAR
+    code: HBAR
+    description: Hedera
+    kind: crypto
+
+  - id: XTVCHEX
+    code: HEX
+    description: HEX
+    kind: crypto
+
+  - id: XTVCHIT
+    code: HIT
+    description: HitChain
+    kind: crypto
+
+  - id: XTVCHNT
+    code: HNT
+    description: Helium
+    kind: crypto
+
+  - id: XTVCHOT
+    code: HOT
+    description: Holo
+    kind: crypto
+
+  - id: XTVCICE
+    code: ICE
+    description: Popsicle Finance
+    kind: crypto
+
+  - id: XTVCICP
+    code: ICP
+    description: Internet Computer
+    kind: crypto
+
+  - id: XTVCKAVA
+    code: KAVA
+    description: Kava
+    kind: crypto
+
+  - id: XTVCKEEP
+    code: KEEP
+    description: Keep Network
+    kind: crypto
+
+  - id: XTVCKLAY
+    code: KLAY
+    description: Klaytn
+    kind: crypto
+
+  - id: XTVCKNC
+    code: KNC
+    description: Kyber Network Crystal v2
+    kind: crypto
+
+  - id: XTVCLEO
+    code: LEO
+    description: UNUS SED LEO
+    kind: crypto
+
+  - id: XTVCLINK
+    code: LINK
+    description: Chainlink
+    kind: crypto
+
+  - id: XTVCLRC
+    code: LRC
+    description: Loopring
+    kind: crypto
+
+  - id: XTVCLTC
+    code: LTC
+    description: Litecoin
+    kind: crypto
+
+  - id: XTVCLUNA
+    code: LUNA
+    description: Terra
+    kind: crypto
+
+  - id: XTVCMANA
+    code: MANA
+    description: Decentraland
+    kind: crypto
+
+  - id: XTVCMATIC
+    code: MATIC
+    description: Polygon
+    kind: crypto
+
+  - id: XTVCMIOTA
+    code: MIOTA
+    description: IOTA
+    kind: crypto
+
+  - id: XTVCMKR
+    code: MKR
+    description: Maker
+    kind: crypto
+
+  - id: XTVCNEAR
+    code: NEAR
+    description: NEAR Protocol
+    kind: crypto
+
+  - id: XTVCNH
+    code: CNH
+    description: Offshore Yuan Renminbi
+    kind: fiat
+    country: CN
+  - id: XTVCOCEAN
+    code: OCEAN
+    description: Ocean Protocol
+    kind: crypto
+
+  - id: XTVCONE
+    code: ONE
+    description: Harmony
+    kind: crypto
+
+  - id: XTVCPERP
+    code: PERP
+    description: Perpetual Protocol
+    kind: crypto
+
+  - id: XTVCREN
+    code: REN
+    description: Ren
+    kind: crypto
+
+  - id: XTVCRENBTC
+    code: RENBTC
+    description: renBTC
+    kind: crypto
+
+  - id: XTVCREQ
+    code: REQ
+    description: Request
+    kind: crypto
+
+  - id: XTVCRGT
+    code: RGT
+    description: Rari Governance Token
+    kind: crypto
+
+  - id: XTVCROSE
+    code: ROSE
+    description: Oasis Network
+    kind: crypto
+
+  - id: XTVCRSR
+    code: RSR
+    description: Reserve Rights
+    kind: crypto
+
+  - id: XTVCRUNE
+    code: RUNE
+    description: THORChain
+    kind: crypto
+
+  - id: XTVCSAND
+    code: SAND
+    description: The Sandbox
+    kind: crypto
+
+  - id: XTVCSCRT
+    code: SCRT
+    description: Secret
+    kind: crypto
+
+  - id: XTVCSHIB
+    code: SHIB
+    description: Shiba Inu
+    kind: crypto
+
+  - id: XTVCSNX
+    code: SNX
+    description: Synthetix
+    kind: crypto
+
+  - id: XTVCSOL
+    code: SOL
+    description: Solana
+    kind: crypto
+
+  - id: XTVCSRM
+    code: SRM
+    description: Serum
+    kind: crypto
+
+  - id: XTVCSUSHI
+    code: SUSHI
+    description: SushiSwap
+    kind: crypto
+
+  - id: XTVCSXP
+    code: SXP
+    description: SXP
+    kind: crypto
+
+  - id: XTVCTHETA
+    code: THETA
+    description: Theta Network
+    kind: crypto
+
+  - id: XTVCTLOS
+    code: TLOS
+    description: Telos
+    kind: crypto
+
+  - id: XTVCTON
+    code: TON
+    description: Toncoin
+    kind: crypto
+
+  - id: XTVCTRIBE
+    code: TRIBE
+    description: Tribe
+    kind: crypto
+
+  - id: XTVCTRX
+    code: TRX
+    description: TRON
+    kind: crypto
+
+  - id: XTVCUMA
+    code: UMA
+    description: UMA
+    kind: crypto
+
+  - id: XTVCUNI
+    code: UNI
+    description: Uniswap
+    kind: crypto
+
+  - id: XTVCUSDC
+    code: USDC
+    description: USD Coin
+    kind: crypto
+
+  - id: XTVCUSDN
+    code: USDN
+    description: Neutrino USD
+    kind: crypto
+
+  - id: XTVCUSDT
+    code: USDT
+    description: Tether
+    kind: crypto
+
+  - id: XTVCVET
+    code: VET
+    description: VeChain
+    kind: crypto
+
+  - id: XTVCWBTC
+    code: WBTC
+    description: Wrapped Bitcoin
+    kind: crypto
+
+  - id: XTVCXLM
+    code: XLM
+    description: Stellar
+    kind: crypto
+
+  - id: XTVCXMR
+    code: XMR
+    description: Monero
+    kind: crypto
+
+  - id: XTVCXRP
+    code: XRP
+    description: XRP
+    kind: crypto
+
+  - id: XTVCXTZ
+    code: XTZ
+    description: Tezos
+    kind: crypto
+
+  - id: XTVCYFI
+    code: YFI
+    description: yearn.finance
+    kind: crypto
+
+  - id: XTVCZRX
+    code: ZRX
+    description: 0x
+    kind: crypto
+
+  - id: XTVDEM
+    code: DEM
+    description: German Mark
+    kind: fiat
+    country: DE
+  - id: XTVESP
+    code: ESP
+    description: Spanish Peseta
+    kind: fiat
+    country: ES
+  - id: XTVFIM
+    code: FIM
+    description: Finnish Markka
+    kind: fiat
+    country: FI
+  - id: XTVFRF
+    code: FRF
+    description: French Franc
+    kind: fiat
+    country: FR
+  - id: XTVGBX
+    code: GBX
+    description: Pence Sterling
+    kind: fiat
+    country: GB
+  - id: XTVGRD
+    code: GRD
+    description: Greek Drachma
+    kind: fiat
+    country: GR
+  - id: XTVIEP
+    code: IEP
+    description: Irish Pound
+    kind: fiat
+    country: IE
+  - id: XTVILA
+    code: ILA
+    description: Israeli Agorot
+    kind: fiat
+    country: IL
+  - id: XTVITL
+    code: ITL
+    description: Italian Lira
+    kind: fiat
+    country: IT
+  - id: XTVKWF
+    code: KWF
+    description: Kuwaiti Fils
+    kind: fiat
+    country: KW
+  - id: XTVLUF
+    code: LUF
+    description: Luxembourgian Franc
+    kind: fiat
+    country: LU
+  - id: XTVNLG
+    code: NLG
+    description: Dutch Guilder
+    kind: fiat
+    country: NL
+  - id: XTVPTE
+    code: PTE
+    description: Portuguese Escudo
+    kind: fiat
+    country: PT
+  - id: XTVSIT
+    code: SIT
+    description: Slovenian Tolar
+    kind: fiat
+    country: SI
+  - id: XTVUSX
+    code: USX
+    description: U.S. Cents
+    kind: fiat
+    country: US
+  - id: XTVZAC
+    code: ZAC
+    description: South African Cents
+    kind: fiat
+    country: ZA
+  - id: YER
+    code: YER
+    description: Yemeni Rial
+    kind: fiat
+    country: YE
+  - id: ZAR
+    code: ZAR
+    description: South African Rand
+    kind: fiat
+    country: ZA
+  - id: ZMW
+    code: ZMW
+    description: Zambian Kwacha
+    kind: fiat
+    country: ZM
+units:
+  - id: 100KGM
+    name: 100kg
+    description: 100 kilograms
+    type: mass
+  - id: 10KGM
+    name: 10kg
+    description: 10 kilograms
+    type: mass
+  - id: 20KGM
+    name: 20kg
+    description: 20 kilograms
+    type: mass
+  - id: 40KGM
+    name: 40kg
+    description: 40 kilograms
+    type: mass
+  - id: 60KGM
+    name: 60kg
+    description: 60 kilograms
+    type: mass
+  - id: APZ
+    name: apoz
+    description: troy ounce
+    type: mass
+  - id: ARROBA
+    name: arroba
+    description: arroba
+    type: mass
+  - id: BLD
+    name: BLD
+    description: dry barrel (US)
+    type: volume
+  - id: BLL
+    name: BLL
+    description: barrel (US)
+    type: volume
+  - id: BLLPDAY
+    name: BLL/day
+    description: barrel per day
+    type: bllperday
+  - id: BRT
+    name: BRT
+    description: birth rate
+    type: birthsperthousandpeople
+  - id: BTU
+    name: Btu
+    description: British thermal unit
+    type: energy
+  - id: BUA
+    name: BUA
+    description: bushel (US)
+    type: volume
+  - id: BUI
+    name: BUI
+    description: bushel (UK)
+    type: volume
+  - id: CAP
+    name: CAP
+    description: company and person
+    type: companyandperson
+  - id: CASES
+    name: Cases/10000
+    description: cases per 10000 people
+    type: casesper10000
+  - id: CMPNY
+    name: CMPNY
+    description: company
+    type: company
+  - id: CMQ
+    name: cm3
+    description: cm3
+    type: volume
+  - id: CRL
+    name: CRL
+    description: carload
+    type: carload
+  - id: CWA
+    name: CWA
+    description: hundredweight US
+    type: mass
+  - id: CWI
+    name: CWI
+    description: hundredweight UK
+    type: mass
+  - id: DAG
+    name: dag
+    description: decagram
+    type: mass
+  - id: DAY
+    name: day
+    description: day
+    type: time
+  - id: DOZ
+    name: DOZ
+    description: dozen
+    type: dozen
+  - id: FTQ
+    name: ft3
+    description: ft3
+    type: volume
+  - id: GJO
+    name: gJ
+    description: gigajoule
+    type: energy
+  - id: GLD
+    name: GLD
+    description: dry gallon (US)
+    type: volume
+  - id: GLI
+    name: GLI
+    description: gallon (UK)
+    type: volume
+  - id: GLL
+    name: GLL
+    description: gallon (US)
+    type: volume
+  - id: GRM
+    name: g
+    description: gram
+    type: mass
+  - id: GWH
+    name: GWh
+    description: gigawatt hour
+    type: energy
+  - id: HIRE
+    name: Hire
+    description: hire
+    type: hire
+  - id: HLT
+    name: hl
+    description: hectolitre
+    type: volume
+  - id: HOUR
+    name: hour
+    description: hour
+    type: time
+  - id: HS
+    name: House
+    description: house
+    type: house
+  - id: HSH
+    name: HSH
+    description: household
+    type: household
+  - id: HSI
+    name: HSI
+    description: housing inventory
+    type: housinginventory
+  - id: IND
+    name: IND
+    description: indicator
+    type: indicator
+  - id: IP
+    name: IP
+    description: IP address
+    type: ip
+  - id: JBO
+    name: JBO
+    description: job opening
+    type: jobopening
+  - id: JLC
+    name: JLC
+    description: jobless claim
+    type: joblessclaim
+  - id: JOU
+    name: J
+    description: joule
+    type: energy
+  - id: KBPS
+    name: kbps
+    description: kilobit per second
+    type: networkbandwith
+  - id: KGM
+    name: kg
+    description: kilogram
+    type: mass
+  - id: KJO
+    name: kJ
+    description: kilojoule
+    type: energy
+  - id: KWH
+    name: kWh
+    description: kilowatt hour
+    type: energy
+  - id: LAD
+    name: LAD
+    description: layoff and discharge
+    type: layoffanddischarge
+  - id: LBR
+    name: lb
+    description: pound
+    type: mass
+  - id: LTN
+    name: lt
+    description: long ton
+    type: mass
+  - id: LTR
+    name: l
+    description: litre
+    type: volume
+  - id: MA
+    name: mortgage apl.
+    description: mortgage application
+    type: mortgageapplication
+  - id: MBF
+    name: MBF
+    description: 1000 board feet
+    type: volume
+  - id: MMBTU
+    name: MMBtu
+    description: million British thermal unit
+    type: energy
+  - id: MONTH
+    name: month
+    description: month
+    type: time
+  - id: MTK
+    name: m2
+    description: m2
+    type: area
+  - id: MTQ
+    name: m3
+    description: m3
+    type: volume
+  - id: MWH
+    name: МWh
+    description: megawatt hour
+    type: energy
+  - id: NBL
+    name: NBL
+    description: net balance
+    type: netbalance
+  - id: NMI
+    name: NMI
+    description: nautical mile
+    type: length
+  - id: ONZ
+    name: ONZ
+    description: ounce
+    type: mass
+  - id: OZA
+    name: OZA
+    description: fluid ounce (US)
+    type: volume
+  - id: OZI
+    name: OZI
+    description: fluid ounce (UK)
+    type: volume
+  - id: PAYROLL
+    name: Payroll
+    description: payroll
+    type: payroll
+  - id: PCT
+    name: '%'
+    description: percent
+    type: percent
+  - id: PCTGDP
+    name: '% of GDP'
+    description: percent of GDP
+    type: percent
+  - id: PHTP
+    name: PHTP
+    description: per 100 000 people
+    type: per100000people
+  - id: PMP
+    name: PMP
+    description: per one million people
+    type: peronemillionpeople
+  - id: POINT
+    name: point
+    description: point
+    type: point
+  - id: PPL
+    name: PPL
+    description: people
+    type: people
+  - id: PSN
+    name: PSN
+    description: person
+    type: person
+  - id: PTP
+    name: PTP
+    description: per 1000 people
+    type: per1000people
+  - id: RATIO
+    name: Ratio
+    description: ratio
+    type: ratio
+  - id: RPMI
+    name: RPMI
+    description: revenue passenger mile
+    type: revenuepassengermile
+  - id: SEP
+    name: SEP
+    description: separaion
+    type: separation
+  - id: SHARE
+    name: share
+    description: share
+    type: share
+  - id: SMI
+    name: Mile
+    description: mile
+    type: length
+  - id: STN
+    name: STN
+    description: short ton
+    type: mass
+  - id: TCM
+    name: tcm
+    description: thousand cubic metres
+    type: volume
+  - id: TFR
+    name: TFR
+    description: total fertility rate
+    type: birthsperwoman
+  - id: TIV
+    name: TIV
+    description: sipri tiv
+    type: sipritiv
+  - id: TNE
+    name: t
+    description: tonne
+    type: mass
+  - id: UNIT
+    name: unit
+    description: unit
+    type: unit
+  - id: VCNCY
+    name: VCNCY
+    description: job vacancies
+    type: vacancy
+  - id: WCD
+    name: cord
+    description: Cord
+    type: volume
+  - id: WEEK
+    name: week
+    description: week
+    type: time
+  - id: WHR
+    name: Wh
+    description: watt hour
+    type: energy
+  - id: YEAR
+    name: year
+    description: year
+    type: time
+  - id: ZT
+    name: 2 Year U.S. Treasury Notes
+    description: CME Group 2 Year U.S. Treasury Notes
+    type: futures
