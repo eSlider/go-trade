@@ -1,6 +1,11 @@
 # go-trade
 
 [![CI](https://github.com/eSlider/go-trade/actions/workflows/ci.yml/badge.svg)](https://github.com/eSlider/go-trade/actions/workflows/ci.yml)
+[![Go Reference](https://pkg.go.dev/badge/github.com/eslider/go-trade.svg)](https://pkg.go.dev/github.com/eslider/go-trade)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Go](https://img.shields.io/badge/Go-1.22+-00ADD8.svg)](https://go.dev)
+[![Latest Release](https://img.shields.io/github/v/tag/eSlider/go-trade?sort=semver&label=release)](https://github.com/eSlider/go-trade/releases)
+[![GitHub Stars](https://img.shields.io/github/stars/eSlider/go-trade?style=social)](https://github.com/eSlider/go-trade/stargazers)
 
 Go library providing a **unified data model for aggregating market data across multiple exchanges**. Defines exchange-agnostic types for candles, time-and-sale transactions, order books, orders, instruments, and currencies — serving as the common schema for normalizing data from Binance, CME, NASDAQ, and other trading venues.
 
